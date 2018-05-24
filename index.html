@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Simple Quizzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="quiz-engine.js"></script>
+    <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function() {
+        //defers executing function until everything is ready on the page
+        const container = document.getElementById('container');
+                Quiz.create(container, [
+                  {
+                    question: 'Inside which HTML element do we put the Javascript?',
+                    options: ['<js>', '<javascript>', '<script>'],
+                    answer: 2
+                  },
+                  {
+                    question: 'How do you create a function in JavaScript?',
+                    options: ['function = myFunction()', 'function myFunction()', 'function:myFunction()'],
+                    answer: 1
+                  },
+                  {
+                    question: 'How do you call a function named "myFunction"?',
+                    options: ['myFunction()', 'call myFunction()', 'call function myFunction()'],
+                    answer: 0
+                  },
+                  {
+                    question: 'How do you round the number 7.25, to the nearest integer?',
+                    options: ['Math.rnd(7.25)', 'Math.round(7.25)', 'round(7.25)'],
+                    answer: 1
+                  },
+                  {
+                    question: 'What does Math.random() return?',
+                    options: ['a random number between 0 and 100', 'a random number between 1 and 100', 'a random number between 0 and 1'],
+                    answer: 2
+                  }
+                ]);
+              });
+            </script>
+          </head>
+          <body>
+            <h1>Javascript Quiz</h1>
+            <div id="container"></div>
+          </body>
+        </html>

@@ -1,0 +1,15 @@
+{
+  "name": "intro-to-js-05-23-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quiz-engine.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
